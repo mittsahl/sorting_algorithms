@@ -15,4 +15,6 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+void quick_sort(int *array, size_t size);
+void selection_sort(int *array, size_t size);
 #endif
