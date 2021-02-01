@@ -56,7 +56,7 @@ void quick_sort_real(int *array, size_t size, size_t original, size_t ofst)
 		swap = array[left];
 		array[left] = array[size - 1];
 		array[size - 1] = swap;
-		print_array((array - offset), original);
+		print_array((array - ofst), original);
 	}
 	quick_sort_real(array, left, original, 0 + ofst);
 	quick_sort_real(&array[left + 1], size - left - 1, original, 1 + left + ofst);
