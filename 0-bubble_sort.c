@@ -2,15 +2,19 @@
 
 /**
  * bubble_sort - Sorts an array of integers using bubble sort
- *
  * @array: The array to be printed
  * @size: Number of elements in @array
+ *
+ * Return: Always none
  */
 void bubble_sort(int *array, size_t size)
 {
 	unsigned int swapped = 0, idx, tmp;
 
-	while(swapped == 0)
+	if (array == NULL || size < 2)
+		return;
+
+	while (swapped == 0)
 	{
 		swapped = 1;
 		for (idx = 0; idx < size; idx++)
