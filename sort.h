@@ -17,6 +17,8 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+
+void counting_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void swap(listint_t **list, listint_t **tmp);
 void print_list(const listint_t *list);
